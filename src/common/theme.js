@@ -9,17 +9,16 @@ export default {
   fontFamily,
   colors: {
     texts: {
-      primary: "#000000",
+      primary: "#0B0B0B",
       warning: "#ed3737",
       white: "#FFFFFF",
     },
     backgrounds: {
       primary: {
-        gray: "#e5e5e5",
-        grayDark: "#7d7d7d",
-        green: "#6dc77a",
-        blue: "#000e36",
+        gray: "#F6F6F6",
         white: "#FFFFFF",
+        black: "#000000",
+        yellow: "#EAB057"
       },
     },
   },
