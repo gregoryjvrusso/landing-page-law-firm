@@ -1,18 +1,21 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { theme } from "styled-tools";
-import { height, maxWidth } from "styled-system";
+import { height, maxWidth, display } from "styled-system";
 import Flex from "../../elements/Flex";
-import Box from "../../elements/Box";
 import SideBar from "../../elements/SideBar";
 import logo from "../../../public/img/logo-logo-color.png";
 import name from "../../../public/img/logo-name-color.png";
 
-const Container = styled(Box)`
-  background-color: ${theme("colors.backgrounds.primary.snow")};
+const ContainerHeaderMobile = styled(Flex)`
+  flex-direction: column;
+  ${display};
+`;
+
+const Container = styled(Flex)`
+  background-color: ${theme("colors.backgrounds.primary.white")};
   justify-content: start;
   align-items: center;
-  border-bottom: 1px solid ${theme("colors.backgrounds.primary.blue")};
 `;
 
 const Image = styled.img`
@@ -29,15 +32,15 @@ const Sandwich = styled.div`
 const Line = styled.div`
   display: block;
   width: 50%;
-  border-bottom: 1px solid ${theme("colors.backgrounds.primary.blue")};
+  border-bottom: 1px solid ${theme("colors.backgrounds.primary.black")};
   margin: 10% auto;
 `;
 
 const HeaderMobile = () => {
   const [opened, setOpen] = useState(false);
   return (
-    <React.Fragment>
-      <Container display={["flex", "flex", "none"]} p={2}>
+    <ContainerHeaderMobile display={["flex", "flex", "none"]}>
+      <Container p={2}>
         <Sandwich onClick={() => setOpen(!opened)}>
           <Line />
           <Line />
@@ -52,12 +55,8 @@ const HeaderMobile = () => {
           </Flex>
         </Flex>
       </Container>
-      <SideBar
-        display={["flex", "flex", "none"]}
-        setOpen={setOpen}
-        opened={opened}
-      />
-    </React.Fragment>
+      <SideBar setOpen={setOpen} opened={opened} />
+    </ContainerHeaderMobile>
   );
 };
 

@@ -6,10 +6,9 @@ import LinkMenu from "../LinkMenu";
 
 const ContainerSideBar = styled(Box)`
   width: ${(props) => (props.opened ? "100%" : "0")};
-  height: 100%;
+  height: ${(props) => (props.opened ? "100%" : "0")};
   background: rgba(0, 0, 0, 0.3);
   flex-direction: column;
-  position: relative;
   z-index: 100;
   top: 0;
   left: 0;

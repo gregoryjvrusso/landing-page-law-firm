@@ -5,14 +5,20 @@ import Flex from "../../elements/Flex";
 import Button from "../../elements/Button";
 import { fontSize, margin } from "styled-system";
 import featured from "../../../public/img/featured.png";
+import featuredMobile from "../../../public/img/featured-mobile.png";
 
 const Container = styled(Flex)`
   align-items: center;
   justify-content: center;
   background-image: url(${featured});
+  height: 450px;
+  background-repeat: no-repeat;
   opacity: 0.9;
   width: 100%;
-  height: 400px;
+  background-position: center;
+  @media only screen and (max-width: 600px) {
+    background-image: url(${featuredMobile});
+  }
 `;
 
 const Title = styled.h1`

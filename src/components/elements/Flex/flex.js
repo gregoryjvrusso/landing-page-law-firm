@@ -7,6 +7,7 @@ import Box from "../Box";
 const Container = styled(Box)`
   ${{ display: "flex" }}
   ${flexbox}
+
 `;
 
 const Flex = ({ children, ...props }) => (
