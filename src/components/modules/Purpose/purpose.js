@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Flex from "../../elements/Flex";
 import Text from "../../elements/Text";
 import { fontSize } from "styled-system";
-import purpose from "../../../public/img/mission.png";
+import { purpose } from "../../../public/img";
 
 const Container = styled(Flex)`
   align-items: center;

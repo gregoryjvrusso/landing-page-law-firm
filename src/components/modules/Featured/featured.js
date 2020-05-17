@@ -4,8 +4,7 @@ import { theme } from "styled-tools";
 import Flex from "../../elements/Flex";
 import Button from "../../elements/Button";
 import { fontSize, margin } from "styled-system";
-import featured from "../../../public/img/featured.png";
-import featuredMobile from "../../../public/img/featured-mobile.png";
+import { featured, featuredMobile } from "../../../public/img";
 
 const Container = styled(Flex)`
   align-items: center;
@@ -38,10 +37,10 @@ const Featured = () => (
         Advocacia Empresarial e Acidentária
       </Title>
       <Button
-        w={["90%", "70%", "50%"]}
+        width={["90%", "70%", "50%"]}
         radius
-        fw={600}
-        fs={["16px", "25px", "32px"]}
+        fontWeight={600}
+        fontSize={["16px", "25px", "32px"]}
         color="black"
         bg="white"
       >

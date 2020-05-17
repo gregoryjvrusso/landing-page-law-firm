@@ -6,13 +6,12 @@ import LinkMenu from "../LinkMenu";
 
 const ContainerSideBar = styled(Box)`
   width: ${(props) => (props.opened ? "100%" : "0")};
-  height: ${(props) => (props.opened ? "100%" : "0")};
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.7);
   flex-direction: column;
   z-index: 100;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
+  top: 100%;
+  position: absolute;
+  overflow: hidden;
   transition: all 0.25s;
 `;
 const CloseContainer = styled.div`
@@ -26,16 +25,13 @@ const Close = styled.div`
   font-weight: 600;
 `;
 
-const SideBar = ({ opened, setOpen }) => {
-  console.log(opened);
-  return (
-    <ContainerSideBar opened={opened} display={["flex", "flex", "none"]}>
-      <CloseContainer>
-        <Close onClick={() => setOpen(!opened)}>X</Close>
-      </CloseContainer>
-      <LinkMenu />
-    </ContainerSideBar>
-  );
-};
+const SideBar = ({ opened, setOpen }) => (
+  <ContainerSideBar opened={opened} display={["flex", "flex", "none"]}>
+    <CloseContainer>
+      <Close onClick={() => setOpen(!opened)}>X</Close>
+    </CloseContainer>
+    <LinkMenu />
+  </ContainerSideBar>
+);
 
 export default SideBar;

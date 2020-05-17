@@ -15,7 +15,7 @@ storiesOf("Elements/Button", module).add("default", () => (
   </ThemeProvider>
 )).add("radius", () => (
   <ThemeProvider theme={theme}>
-    <Button radius fs={4} bg="black" color="white">Teste</Button>
+    <Button radius fontSize={4} bg="black" color="white">Teste</Button>
   </ThemeProvider>
 ));
 

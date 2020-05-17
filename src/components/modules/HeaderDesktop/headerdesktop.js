@@ -1,15 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { theme } from "styled-tools";
-import { height, maxWidth } from "styled-system";
 import Flex from "../../elements/Flex";
 import Box from "../../elements/Box";
+import Image from "../../elements/Image";
 import InformationMenu from "../../elements/InformationMenu";
 import LinkMenu from "../../elements/LinkMenu";
-import logo from "../../../public/img/logo-logo-color.png";
-import name from "../../../public/img/logo-name-color.png";
-import telephone from "../../../public/img/telephone.svg";
-import marker from "../../../public/img/marker.svg";
+import { logoColor, nameColor, telephone, marker } from "../../../public/img";
 
 const Container = styled(Box)`
   background: ${theme("colors.backgrounds.primary.white")};
@@ -18,22 +15,18 @@ const Container = styled(Box)`
   justify-content: space-between;
 `;
 
-const Image = styled.img`
-  ${height}
-  ${maxWidth}
-  margin: 5px;
-`;
-
 const ContainerLinkMenu = styled(Box)`
   background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 100%;
 `;
 
 const HeaderDesktop = () => (
   <React.Fragment>
     <Container display={["none", "none", "flex"]} p={2}>
       <Flex alignItems="center" m={1}>
-        <Image src={logo} maxWidth={"80px"} height={"auto"} />
-        <Image src={name} maxWidth={"240px"} height={"55px"} />
+        <Image src={logoColor} m={1} maxWidth={"80px"} height={"auto"} />
+        <Image src={nameColor} m={1} height={"55px"} />
       </Flex>
       <Flex>
         <InformationMenu
@@ -50,7 +43,7 @@ const HeaderDesktop = () => (
         />
       </Flex>
     </Container>
-    <ContainerLinkMenu display={["none", "none", "flex"]} >
+    <ContainerLinkMenu display={["none", "none", "flex"]}>
       <LinkMenu />
     </ContainerLinkMenu>
   </React.Fragment>
