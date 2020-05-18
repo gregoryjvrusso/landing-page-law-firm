@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Flex from "../../elements/Flex";
 import Text from "../../elements/Text";
-import { fontSize } from "styled-system";
 import { purpose } from "../../../public/img";
 
 const Container = styled(Flex)`
@@ -17,13 +16,12 @@ const Container = styled(Flex)`
   text-align: center;
   letter-spacing: 1px;
   line-height: 2;
-  ${fontSize}
 `;
 
 const Purpose = () => (
-  <Container fontSize={["16px", "18px", "20px"]}>
+  <Container>
     <Flex width={["90%", "80%", "60%"]}>
-      <Text>
+      <Text fontSize={["16px", "18px", "20px"]}>
         Excelência nos serviços de consultoria, assessoria e de advocacia com
         aplicação específica do Direito para cada cliente.
       </Text>

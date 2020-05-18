@@ -6,11 +6,13 @@ import theme from "../../common/theme";
 import Header from "./Header";
 import Featured from "./Featured";
 import Purpose from "./Purpose";
+import AboutUs from "./AboutUs";
 
 storiesOf("Site/Site", module).add("default", () => (
   <ThemeProvider theme={theme}>
     <Header />
     <Featured />
     <Purpose />
+    <AboutUs />
   </ThemeProvider>
 ));

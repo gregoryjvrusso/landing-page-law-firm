@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { theme } from "styled-tools";
 import Flex from "../../elements/Flex";
 import Button from "../../elements/Button";
-import { fontSize, margin } from "styled-system";
+import Text from "../../elements/Text";
 import { featured, featuredMobile } from "../../../public/img";
 
 const Container = styled(Flex)`
@@ -20,22 +20,19 @@ const Container = styled(Flex)`
   }
 `;
 
-const Title = styled.h1`
-  color: ${theme("colors.backgrounds.primary.white")};
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  ${margin};
-  ${fontSize};
-`;
-
 const Featured = () => (
   <Container>
     <Flex flexDirection="column" justify-content="center" alignItems="center">
-      <Title mb={5} fontSize={["16px", "25px", "32px"]}>
-        Advocacia Empresarial e Acidentária
-      </Title>
+      <Text
+        as={"h1"}
+        textAlign="center"
+        letterSpacing={"2px"}
+        color={"white"}
+        mb={5}
+        fontSize={["16px", "25px", "32px"]}
+      >
+        ADVOCACIA EMPRESARIAL E ACIDENTÁRIA
+      </Text>
       <Button
         width={["90%", "70%", "50%"]}
         radius
