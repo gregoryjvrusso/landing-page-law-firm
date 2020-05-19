@@ -12,6 +12,7 @@ const Container = styled(Flex)`
   background-repeat: no-repeat;
   opacity: 0.9;
   width: 100%;
+  max-width: 1280px;
   background-position: center;
   text-align: center;
   letter-spacing: 1px;
@@ -19,14 +20,16 @@ const Container = styled(Flex)`
 `;
 
 const Purpose = () => (
-  <Container>
-    <Flex width={["90%", "80%", "60%"]}>
-      <Text fontSize={["16px", "18px", "20px"]}>
-        Excelência nos serviços de consultoria, assessoria e de advocacia com
-        aplicação específica do Direito para cada cliente.
-      </Text>
-    </Flex>
-  </Container>
+  <Flex width="100%" justifyContent="center" alignItems="center">
+    <Container>
+      <Flex width={["90%", "80%", "60%"]}>
+        <Text fontSize={["16px", "18px", "20px"]}>
+          Excelência nos serviços de consultoria, assessoria e de advocacia com
+          aplicação específica do Direito para cada cliente.
+        </Text>
+      </Flex>
+    </Container>
+  </Flex>
 );
 
 export default Purpose;
