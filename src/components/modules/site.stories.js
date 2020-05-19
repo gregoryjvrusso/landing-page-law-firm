@@ -7,6 +7,7 @@ import Header from "./Header";
 import Featured from "./Featured";
 import Purpose from "./Purpose";
 import AboutUs from "./AboutUs";
+import Expertise from "./Expertise";
 
 storiesOf("Site/Site", module).add("default", () => (
   <ThemeProvider theme={theme}>
@@ -14,5 +15,6 @@ storiesOf("Site/Site", module).add("default", () => (
     <Featured />
     <Purpose />
     <AboutUs />
+    <Expertise />
   </ThemeProvider>
 ));
