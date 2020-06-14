@@ -6,7 +6,6 @@ import Box from "../../elements/Box";
 import Image from "../../elements/Image";
 import InformationMenu from "../../elements/InformationMenu";
 import LinkMenu from "../../elements/LinkMenu";
-import { logoColor, nameColor, telephone, marker } from "../../../public/img";
 
 const Container = styled(Box)`
   background: ${theme("colors.backgrounds.primary.white")};
@@ -39,18 +38,23 @@ const HeaderDesktop = () => (
         width="100%"
       >
         <Flex alignItems="center" m={1}>
-          <Image src={logoColor} m={1} maxWidth={"80px"} height={"auto"} />
-          <Image src={nameColor} m={1} height={"55px"} />
+          <Image
+            src="/image/logo-color.png"
+            m={1}
+            maxWidth={"80px"}
+            height={"auto"}
+          />
+          <Image src="/image/logo-name-color.png" m={1} height={"55px"} />
         </Flex>
         <Flex>
           <InformationMenu
-            icon={telephone}
+            icon="/svg/telephone.svg"
             title="Telefone"
             textPrimary="(11) 94747-0009"
             textSecondary="(11) 2092-3721"
           />
           <InformationMenu
-            icon={marker}
+            icon="/svg/marker.svg"
             title="Endereço"
             textPrimary="Rua Francisco Marengo, 205"
             textSecondary="Tatuapé - São Paulo - SP"

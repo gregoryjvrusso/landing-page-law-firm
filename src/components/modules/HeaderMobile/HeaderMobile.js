@@ -4,7 +4,6 @@ import { theme } from "styled-tools";
 import { height, maxWidth, display } from "styled-system";
 import Flex from "../../elements/Flex";
 import SideBar from "../../elements/SideBar";
-import { logoColor, nameColor } from "../../../public/img";
 
 const ContainerHeaderMobile = styled(Flex)`
   flex-direction: column;
@@ -48,14 +47,14 @@ const HeaderMobile = () => {
         <Flex justifyContent="center" width="100%">
           <Flex alignItems="center" m={1}>
             <Image
-              src={logoColor}
+              src="/image/logo-color.png"
               maxWidth={["50px", "50px"]}
               height={"auto"}
             />
           </Flex>
           <Flex alignItems="center" m={1}>
             <Image
-              src={nameColor}
+              src="/image/logo-name-color.png"
               maxWidth={["140px", "140px"]}
               height={"30px"}
             />

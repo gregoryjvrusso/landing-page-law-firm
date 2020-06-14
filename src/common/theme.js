@@ -18,7 +18,7 @@ export default {
         gray: "#F6F6F6",
         white: "#FFFFFF",
         black: "#000000",
-        yellow: "#EAB057"
+        yellow: "#EAB057",
       },
     },
   },

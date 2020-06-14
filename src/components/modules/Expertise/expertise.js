@@ -4,7 +4,6 @@ import Box from "../../elements/Box";
 import Flex from "../../elements/Flex";
 import Text from "../../elements/Text";
 import List from "../../elements/List";
-import { iconExpandable } from "../../../public/img";
 
 const Container = styled(Box)`
   width: 100%;
@@ -85,9 +84,9 @@ const Expertise = () => (
         pl={[2, 2, 5]}
         pr={[2, 2, 5]}
       >
-        <List data={mockData[0]} image={iconExpandable} />
-        <List data={mockData[1]} image={iconExpandable} />
-        <List data={mockData[2]} image={iconExpandable} />
+        <List data={mockData[0]} image="/image/icon-expandable.png" />
+        <List data={mockData[1]} image="/image/icon-expandable.png" />
+        <List data={mockData[2]} image="/image/icon-expandable.png" />
       </Flex>
     </Container>
   </Flex>

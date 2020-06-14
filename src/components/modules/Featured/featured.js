@@ -3,12 +3,11 @@ import styled from "styled-components";
 import Flex from "../../elements/Flex";
 import Button from "../../elements/Button";
 import Text from "../../elements/Text";
-import { featured, featuredMobile } from "../../../public/img";
 
 const Container = styled(Flex)`
   align-items: center;
   justify-content: center;
-  background-image: url(${featured});
+  background-image: url('/image/featured.png');
   height: 450px;
   background-repeat: no-repeat;
   opacity: 0.9;
@@ -16,14 +15,14 @@ const Container = styled(Flex)`
   max-width: 1280px;
   background-position: center;
   @media only screen and (max-width: 600px) {
-    background-image: url(${featuredMobile});
+    background-image: url("/image/featured-mobile.png");
   }
 `;
 
 const Featured = () => (
   <Flex width="100%" alignItems="center" justifyContent="center">
     <Container>
-      <Flex flexDirection="column" justify-content="center" alignItems="center">
+      <Flex flexDirection="column" justifyContent="center" alignItems="center">
         <Text
           as={"h1"}
           textAlign="center"
