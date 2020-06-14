@@ -4,7 +4,6 @@ import Flex from "../../elements/Flex";
 import Box from "../../elements/Box";
 import Image from "../../elements/Image";
 import Text from "../../elements/Text";
-import avatar from "../../../public/img/avatar.png";
 
 const Container = styled(Box)`
   width: 100%;
@@ -32,7 +31,7 @@ const AboutUs = () => (
         pr={[2, 2, 5]}
       >
         <Flex alignItems={"center"} justifyContent={"center"}>
-          <Image maxWidth={"250px"} src={avatar} />
+          <Image maxWidth={"250px"} src="/image/avatar.png" />
         </Flex>
         <Box width={["100%", "100%", "60%"]}>
           <Text

@@ -1,1 +1,1 @@
-export { default } from "./headerdesktop";
+export { default } from "./HeaderDesktop";

@@ -4,6 +4,7 @@
 .pnp.js
 /storybook-static
 .env
+/.next 
 
 # testing
 /coverage

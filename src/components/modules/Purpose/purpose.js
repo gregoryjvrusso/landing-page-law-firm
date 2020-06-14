@@ -2,12 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import Flex from "../../elements/Flex";
 import Text from "../../elements/Text";
-import { purpose } from "../../../public/img";
 
 const Container = styled(Flex)`
   align-items: center;
   justify-content: center;
-  background-image: url(${purpose});
+  background-image: url("/image/purpose.png");
   height: 300px;
   background-repeat: no-repeat;
   opacity: 0.9;
